@@ -3,9 +3,8 @@ import tornado.web
 import tornado.ioloop
 import tornado.httpserver
 from tornado.options import options, define
-from config import DOWNTIME, LOG_DIR
+from config import LOG_DIR
 from application import Application
-import datetime
 import logging
 from logging.handlers import RotatingFileHandler as RFHandler
 

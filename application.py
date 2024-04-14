@@ -1,5 +1,6 @@
 import tornado.web
 import config
+from handlers.backend.extract import GptExtractHandler
 
 
 
@@ -9,7 +10,7 @@ class Application(tornado.web.Application):
         handlers = [
             # 前端页面路由
             # (r'/', findIndexHandler),
-            (r'/rw/gpt/extract', queryAllMachinesHandler),  # 查询所有服务器
+            (r'/rw/gpt/extract', GptExtractHandler),  # 查询所有服务器
         ]
 
         super(Application, self).__init__(handlers, **config.setting)
