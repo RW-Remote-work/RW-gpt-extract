@@ -5,7 +5,7 @@ port=$3
 port=${port:="9209"}
 spcrl="/home/work/supervisor/bin/supervisorctl"
 grep_str=$4
-grep_str=${grep_str:="avatar-cms"}
+grep_str=${grep_str:="RW-gpt-extract"}
 
 startup()
 {
