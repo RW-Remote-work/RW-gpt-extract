@@ -1,6 +1,6 @@
 #!/bin/sh
 basedir=$2
-basedir=${basedir:="/home/work/avatar-cms"}
+basedir=${basedir:="/home/work/RW-gpt-extract"}
 port=$3
 port=${port:="9209"}
 spcrl="/home/work/supervisor/bin/supervisorctl"
